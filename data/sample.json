@@ -1,0 +1,126 @@
+{
+  "matches": [
+    {
+      "id": "sample-bball-1",
+      "name": "NBA 总决赛 G7 模拟",
+      "sportType": "basketball",
+      "homeTeamId": "sample-team-1",
+      "awayTeamId": "sample-team-2",
+      "homeScore": 98,
+      "awayScore": 95,
+      "status": "finished",
+      "currentPeriod": 4,
+      "isOvertime": false,
+      "rules": {
+        "periods": 4,
+        "periodDuration": 720,
+        "winCondition": "time",
+        "firstToScore": 21,
+        "hasOvertime": true,
+        "overtimeDuration": 300
+      },
+      "events": [
+        { "id": "evt-1", "gameTime": 25, "period": 1, "type": "score", "teamId": "sample-team-1", "playerId": "player-1a", "value": 2, "description": "湖人队 — 詹姆斯中投命中 +2" },
+        { "id": "evt-2", "gameTime": 52, "period": 1, "type": "score", "teamId": "sample-team-2", "playerId": "player-2a", "value": 2, "description": "勇士队 — 库里突破上篮 +2" },
+        { "id": "evt-3", "gameTime": 78, "period": 1, "type": "foul", "teamId": "sample-team-2", "playerId": "player-2b", "value": null, "description": "勇士队 — 汤普森犯规" },
+        { "id": "evt-4", "gameTime": 95, "period": 1, "type": "score", "teamId": "sample-team-1", "playerId": "player-1a", "value": 3, "description": "湖人队 — 詹姆斯三分命中 +3" },
+        { "id": "evt-5", "gameTime": 140, "period": 1, "type": "substitution", "teamId": "sample-team-2", "playerId": "player-2c", "value": null, "description": "勇士队 — 格林上场" },
+        { "id": "evt-6", "gameTime": 200, "period": 1, "type": "period_end", "teamId": "", "playerId": null, "value": null, "description": "第1节结束" },
+        { "id": "evt-7", "gameTime": 450, "period": 2, "type": "score", "teamId": "sample-team-1", "playerId": "player-1b", "value": 2, "description": "湖人队 — 戴维斯扣篮 +2" },
+        { "id": "evt-8", "gameTime": 600, "period": 2, "type": "score", "teamId": "sample-team-2", "playerId": "player-2a", "value": 3, "description": "勇士队 — 库里三分命中 +3" }
+      ],
+      "startTime": "2026-06-15T19:00:00.000Z",
+      "endTime": "2026-06-15T21:30:00.000Z",
+      "playerStats": {
+        "player-1a": { "pts": 35, "fgm": 12, "fga": 22, "threePm": 4, "threePa": 8, "ftm": 7, "fta": 9, "oreb": 2, "dreb": 8, "ast": 7, "blk": 1, "stl": 2, "pf": 2, "tov": 3, "minutes": 2280 },
+        "player-1b": { "pts": 28, "fgm": 11, "fga": 18, "threePm": 0, "threePa": 1, "ftm": 6, "fta": 8, "oreb": 5, "dreb": 12, "ast": 3, "blk": 3, "stl": 1, "pf": 3, "tov": 2, "minutes": 2160 },
+        "player-2a": { "pts": 30, "fgm": 10, "fga": 24, "threePm": 6, "threePa": 14, "ftm": 4, "fta": 4, "oreb": 1, "dreb": 5, "ast": 6, "blk": 0, "stl": 3, "pf": 1, "tov": 4, "minutes": 2400 },
+        "player-2b": { "pts": 22, "fgm": 8, "fga": 15, "threePm": 3, "threePa": 7, "ftm": 3, "fta": 4, "oreb": 1, "dreb": 4, "ast": 4, "blk": 1, "stl": 1, "pf": 4, "tov": 2, "minutes": 2100 }
+      },
+      "teamStats": {},
+      "homeActivePlayers": ["player-1a", "player-1b"],
+      "awayActivePlayers": ["player-2a", "player-2b"]
+    },
+    {
+      "id": "sample-football-1",
+      "name": "世界杯决赛模拟",
+      "sportType": "football",
+      "homeTeamId": "sample-team-3",
+      "awayTeamId": "sample-team-4",
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "finished",
+      "currentPeriod": 2,
+      "isOvertime": false,
+      "rules": {
+        "periods": 2,
+        "periodDuration": 2700,
+        "winCondition": "time",
+        "firstToScore": 0,
+        "hasOvertime": true,
+        "overtimeDuration": 900
+      },
+      "events": [
+        { "id": "evt-f1", "gameTime": 540, "period": 1, "type": "score", "teamId": "sample-team-3", "playerId": null, "value": 1, "description": "阿根廷 — 梅西进球 ⚽" },
+        { "id": "evt-f2", "gameTime": 780, "period": 1, "type": "card_yellow", "teamId": "sample-team-4", "playerId": null, "value": null, "description": "法国 — 黄牌" },
+        { "id": "evt-f3", "gameTime": 1250, "period": 1, "type": "score", "teamId": "sample-team-4", "playerId": null, "value": 1, "description": "法国 — 姆巴佩进球 ⚽" },
+        { "id": "evt-f4", "gameTime": 2700, "period": 1, "type": "period_end", "teamId": "", "playerId": null, "value": null, "description": "上半场结束" },
+        { "id": "evt-f5", "gameTime": 3300, "period": 2, "type": "score", "teamId": "sample-team-3", "playerId": null, "value": 1, "description": "阿根廷 — 迪马利亚进球 ⚽" },
+        { "id": "evt-f6", "gameTime": 4200, "period": 2, "type": "score", "teamId": "sample-team-4", "playerId": null, "value": 1, "description": "法国 — 格列兹曼进球 ⚽" },
+        { "id": "evt-f7", "gameTime": 5100, "period": 2, "type": "score", "teamId": "sample-team-3", "playerId": null, "value": 1, "description": "阿根廷 — 梅西进球 ⚽ 绝杀！" }
+      ],
+      "startTime": "2026-06-18T20:00:00.000Z",
+      "endTime": "2026-06-18T22:00:00.000Z",
+      "playerStats": {},
+      "teamStats": {
+        "sample-team-3": { "possession": 48, "shots": 14, "shotsOnTarget": 7, "passes": 432, "passesCompleted": 368, "interceptions": 15, "blockedShots": 3, "corners": 5, "offsides": 2, "fouls": 12, "yellowCards": 2, "redCards": 0 },
+        "sample-team-4": { "possession": 52, "shots": 16, "shotsOnTarget": 8, "passes": 487, "passesCompleted": 421, "interceptions": 11, "blockedShots": 4, "corners": 7, "offsides": 1, "fouls": 10, "yellowCards": 3, "redCards": 0 }
+      },
+      "homeActivePlayers": [],
+      "awayActivePlayers": []
+    }
+  ],
+  "teams": [
+    {
+      "id": "sample-team-1",
+      "name": "湖人队",
+      "color": "#552583",
+      "players": [
+        { "id": "player-1a", "name": "勒布朗·詹姆斯", "number": 23, "position": "SF" },
+        { "id": "player-1b", "name": "安东尼·戴维斯", "number": 3, "position": "PF" },
+        { "id": "player-1c", "name": "德安吉洛·拉塞尔", "number": 1, "position": "PG" },
+        { "id": "player-1d", "name": "奥斯汀·里夫斯", "number": 15, "position": "SG" }
+      ]
+    },
+    {
+      "id": "sample-team-2",
+      "name": "勇士队",
+      "color": "#1d428a",
+      "players": [
+        { "id": "player-2a", "name": "斯蒂芬·库里", "number": 30, "position": "PG" },
+        { "id": "player-2b", "name": "克莱·汤普森", "number": 11, "position": "SG" },
+        { "id": "player-2c", "name": "德雷蒙德·格林", "number": 23, "position": "PF" }
+      ]
+    },
+    {
+      "id": "sample-team-3",
+      "name": "阿根廷",
+      "color": "#75aadb",
+      "players": [
+        { "id": "player-3a", "name": "梅西", "number": 10, "position": "FW" },
+        { "id": "player-3b", "name": "迪马利亚", "number": 11, "position": "FW" },
+        { "id": "player-3c", "name": "恩佐·费尔南德斯", "number": 24, "position": "MF" }
+      ]
+    },
+    {
+      "id": "sample-team-4",
+      "name": "法国",
+      "color": "#002654",
+      "players": [
+        { "id": "player-4a", "name": "姆巴佩", "number": 10, "position": "FW" },
+        { "id": "player-4b", "name": "格列兹曼", "number": 7, "position": "FW" },
+        { "id": "player-4c", "name": "琼阿梅尼", "number": 8, "position": "MF" }
+      ]
+    }
+  ]
+}
